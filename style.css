@@ -1,0 +1,247 @@
+        /* Importando a fonte Corbel */
+        @font-face {
+            font-family: 'Corbel';
+            src: url('https://fonts.cdnfonts.com/s/15319/Corbel-Regular.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        /* Configurações gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Corbel', sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: #fff;
+            line-height: 1.6;
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+        }
+
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Partículas ficarão abaixo do conteúdo */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2; /* Conteúdo acima das partículas */
+        }
+
+        div {
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Corbel', sans-serif;
+            font-weight: 500;
+            color: #FF6F00;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            position: relative;
+            color: #fff;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header h1 {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        #about, #skills, footer {
+            padding: 50px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .typing-text {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid;
+            font-size: 2rem;
+            width: 0;
+            animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: #FF6F00; }
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #skills ul li {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        #skills ul li i {
+            margin-right: 10px;
+        }
+
+        #skills ul li:hover {
+            box-shadow: 0 0 15px 5px #FF6F00;
+            transform: scale(1.05);
+        }
+
+        .arrow {
+            font-size: 1.2rem;
+            color: #FF6F00;
+            transition: transform 0.3s ease;
+        }
+
+        #skills ul li:hover .arrow {
+            transform: translateX(10px);
+        }
+
+        .projects {
+            display: none;
+            background-color: #000000;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+
+        .projects h4 {
+            color: #FF6F00;
+            margin-bottom: 10px;
+        }
+
+        .projects p {
+            color: #ccc;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #222;
+            padding: 20px 0;
+        }
+
+        footer p {
+            color: white;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #da6103, #753505);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 15px 5px rgba(252, 164, 97, 0.7);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 20px 0;
+            }
+
+            #skills ul {
+                flex-direction: column;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            div {
+                margin: 15px 0;
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            div {
+                margin: 10px 0;
+                padding: 8px;
+            }
+
+            header {
+                padding: 10px 0;
+            }
+        }

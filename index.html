@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Pedro Vitor</title>
+
+    <!-- Adicionando FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Adicionando o particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Div para as partículas -->
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="container">
+            <h1>Portfólio - Pedro Vitor</h1>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Olá me chamo Pedro! Sou um estudante apaixonado por tecnologia e desenvolvimento de sistemas. Estou cursando Análise e Desenvolvimento de Sistemas pelo IFPB e adoro explorar novas tecnologias, resolver problemas e criar soluções inovadoras. Além disso, tenho sede por aprendizagem e gosto muito de me desenvolver academicamente e profissionalmente com cursos, projetos e entre outros.</p>
+            <div>
+                <a href=" https://wa.me/+558396495005" class="btn">Fale Comigo!</a>
+                <a href="https://github.com/pedrovitor004" class="btn">Github</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <ul>
+                <li onclick="toggleProjects('web')">
+                    <i class="fas fa-code"></i> Desenvolvimento Web (HTML, CSS, JavaScript)
+                    <i class="fas fa-arrow-right arrow"></i>
+                    <div id="web" class="projects">
+                        <h4>Serviços:</h4>
+                        <a href=""><p>Serviços  </p></a>
+                    </div>
+                </li>
+                <li onclick="toggleProjects('python')">
+                    <i class="fas fa-laptop-code"></i> Programação em Python
+                    <i class="fas fa-arrow-right arrow"></i>
+                    <div id="python" class="projects">
+                        <h4>Projetos Desenvolvidos:</h4>
+                         <a href="https://github.com/pedrovitor004/Python---Projeto01"><p>Projeto 1: Sistema de sorveterias em Python</p></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pedro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
