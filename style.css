@@ -72,7 +72,7 @@
         header h1 {
             position: relative;
             z-index: 2;
-            color: white;
+            color: #ff3600;
         }
 
         #about, #skills, footer {
@@ -174,7 +174,7 @@
         }
 
         .btn {
-            background: linear-gradient(135deg, #da6103, #753505);
+            background: linear-gradient(135deg, #ff3600, ##df522c);
             color: #fff;
             border: none;
             padding: 10px 20px;
