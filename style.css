@@ -53,7 +53,7 @@
         h1, h2, h3 {
             font-family: 'Corbel', sans-serif;
             font-weight: 500;
-            color: #FF6F00;
+            color: #ff3600;
         }
 
         p {
@@ -131,13 +131,13 @@
         }
 
         #skills ul li:hover {
-            box-shadow: 0 0 15px 5px #FF6F00;
+            box-shadow: 0 0 15px 5px #ff3600;
             transform: scale(1.05);
         }
 
         .arrow {
             font-size: 1.2rem;
-            color: #FF6F00;
+            color: #ff3600;
             transition: transform 0.3s ease;
         }
 
@@ -154,7 +154,7 @@
         }
 
         .projects h4 {
-            color: #FF6F00;
+            color: #ff3600;
             margin-bottom: 10px;
         }
 
